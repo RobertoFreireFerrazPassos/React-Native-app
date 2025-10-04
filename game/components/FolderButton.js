@@ -10,7 +10,7 @@ export default function CustomButton({ title, onPress, style }) {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: palette.backgrounddark,
+    backgroundColor: palette.backgroundsecondary,
     borderColor: palette.dark,
     borderWidth: 4,
     borderRadius: 6,

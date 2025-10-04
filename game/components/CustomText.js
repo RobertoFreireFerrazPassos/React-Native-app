@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   text: {
     fontFamily: 'CustomFont',
     fontSize: 24,
-    color: palette.primary,
+    color: palette.dark,
     letterSpacing: 2,
   },
 });
