@@ -21,7 +21,7 @@ export const palette = {
   backgroundprimary : 'rgba(106,190,238,0.6)',
   backgroundsecondary: 'rgba(0,88,185,0.6)',
   backgrounddark : 'rgba(0,31,79,0.6)',
-  green : 'rgba(67,169,158,0.6)',
-  pink : 'rgba(166,100,213,0.6)',
-  brown : 'rgba(143,126,136,0.6)',
+  backgroundgreen : 'rgba(67,169,158,0.6)',
+  backgroundpink : 'rgba(166,100,213,0.6)',
+  backgroundbrown : 'rgba(143,126,136,0.6)',
 }
