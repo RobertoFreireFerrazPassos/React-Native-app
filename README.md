@@ -4,11 +4,10 @@
 
 # Features
 
-## Task Page
+## Tasks Page
 
-- See list of tasks
-- add new tasks
-- Subtasks – Break down bigger tasks into smaller steps using folders
+- See tasks
+- add/delete task
 
 ## Task Creation Page
 
@@ -16,8 +15,7 @@
 - Notes.
 - CreationDate
 - UpdateDate
-- Tags (dropdown)
-- Priority Level – Mark tasks as high, medium, or low priority
+- Tags (dropdown). User can create a new tag from this page
 - Recurring (check box)
 - Recurring Tasks – Repeat daily, weekly, monthly, etc.
 - Deadline
@@ -27,7 +25,7 @@
 
 ## Search Page
 - Search, filter and orderby tasks
-- Easily find tasks by Tile, note, tag, Recurring, creation, update, deadline dates (before/after/between), priority, status and etc.
+- Easily find tasks by Tile, note, tag, Recurring, creation, update, deadline dates (before/after/between), status and etc.
 - Save search as query
 
 ## Queries Page
