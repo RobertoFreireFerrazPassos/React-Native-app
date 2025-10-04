@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { useEffect, useState } from 'react';
-import { loadCustomFont } from './game/import';
+import { loadCustomFont } from './import';
+import CustomText from './components/CustomText';
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
@@ -15,9 +16,9 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={{ fontFamily: 'CustomFont' }}>
-        Open up App.js to start working on your app!
-      </Text>
+      <CustomText style={{ fontSize: 24, color: '#fafafa' }}>
+        Main page
+      </CustomText>
     </View>
   );
 }
@@ -25,7 +26,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#011a1e',
     alignItems: 'center',
     justifyContent: 'center',
   },
