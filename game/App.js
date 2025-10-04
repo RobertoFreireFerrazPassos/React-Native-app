@@ -1,7 +1,9 @@
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import { useEffect, useState } from 'react';
-import { loadCustomFont, images } from './import';
-import CustomText from './components/CustomText';
+import { loadCustomFont, images } from './Import';
+import { folderTree } from './MockData';
+import FileButton from './components/FileButton';
+import FolderButton from './components/FolderButton';
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
@@ -21,9 +23,11 @@ export default function App() {
           style={styles.image}
           resizeMode="cover"
         >
-          <CustomText style={styles.text}>
-              Main page
-          </CustomText>
+            {folderTree.map((item, index) => (
+               item.type === 'folder' ?
+                 <FolderButton title={item.name} onPress={() => {}} /> :
+                 <FileButton title={item.name} onPress={() => {}} />
+            ))}
       </ImageBackground>
     </View>
   );
@@ -36,10 +40,9 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: 24,
-    color: '#fafafa',
+    justifyContent: 'flex-start',
+    paddingHorizontal: 12,
+    paddingTop: 50,
+    paddingBottom: 20,
   },
 });
