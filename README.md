@@ -1,6 +1,6 @@
 # React-Native-app
 
-![alt text](app1.png)
+![alt text](app1.jpeg)
 
 ## References:
 
