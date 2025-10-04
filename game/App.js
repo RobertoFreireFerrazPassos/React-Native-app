@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import { useEffect, useState } from 'react';
-import { loadCustomFont } from './import';
+import { loadCustomFont, images } from './import';
 import CustomText from './components/CustomText';
 
 export default function App() {
@@ -16,9 +16,15 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <CustomText style={{ fontSize: 24, color: '#fafafa' }}>
-        Main page
-      </CustomText>
+        <ImageBackground
+          source={images.background}
+          style={styles.image}
+          resizeMode="cover"
+        >
+          <CustomText style={styles.text}>
+              Main page
+          </CustomText>
+      </ImageBackground>
     </View>
   );
 }
@@ -26,8 +32,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#011a1e',
+  },
+  image: {
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  text: {
+    fontSize: 24,
+    color: '#fafafa',
   },
 });

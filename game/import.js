@@ -6,3 +6,7 @@ export const loadCustomFont = async () => {
     'CustomFont': require('./assets/fonts/BoldPixels.ttf'),
   });
 };
+
+export const images = {
+  'background' : require('./assets/images/background.png'),
+};
