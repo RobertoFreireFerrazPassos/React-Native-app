@@ -1,7 +1,5 @@
 # React-Native-app
 
-![alt text](app1.jpeg)
-
 # Game
 
 Roguelike game where the challenges are mini-games
