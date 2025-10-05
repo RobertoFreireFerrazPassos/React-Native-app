@@ -1,9 +1,7 @@
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import { useEffect, useState } from 'react';
 import { loadCustomFont, images } from './Import';
-import { folderTree } from './MockData';
-import FileButton from './components/FileButton';
-import FolderButton from './components/FolderButton';
+import CustomButton from './components/CustomButton';
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
@@ -23,10 +21,8 @@ export default function App() {
           style={styles.image}
           resizeMode="cover"
         >
-            {folderTree.map((item, index) => (
-               item.type === 'folder' ?
-                 <FolderButton title={item.name} onPress={() => {}} /> :
-                 <FileButton title={item.name} onPress={() => {}} />
+            {[{ 'name' : 'Button 1'},{ 'name' : 'Button 2'}].map((item, index) => (
+              <CustomButton key={index} title={item.name} onPress={() => {}} />
             ))}
       </ImageBackground>
     </View>
