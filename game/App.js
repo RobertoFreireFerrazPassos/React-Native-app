@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import { useEffect, useState } from 'react';
 import { loadCustomFont, images } from './Import';
 import CustomButton from './components/CustomButton';
+import GameLoop from './components/GameLoop';
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
@@ -21,9 +22,11 @@ export default function App() {
           style={styles.image}
           resizeMode="cover"
         >
+          <GameLoop>
             {[{ 'name' : 'Button 1'},{ 'name' : 'Button 2'}].map((item, index) => (
-              <CustomButton key={index} title={item.name} onPress={() => {}} />
+            <CustomButton key={index} title={item.name} onPress={() => {}} />
             ))}
+          </GameLoop>
       </ImageBackground>
     </View>
   );
